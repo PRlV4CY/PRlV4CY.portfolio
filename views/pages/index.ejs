@@ -30,7 +30,13 @@
                 <% contacts.forEach((contact) => { %>
                     <div class="contact-card">
                         <h3 class="contact-title"><%= contact.title %></h3>
-                        <a href="<%= contact.link %>"><%= contact.link %></a>
+                        <% if (contact.title == "Gmail") { %>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=<%= contact.link %>" target="_blank">
+                                <%= contact.link %>
+                            </a>
+                        <% } else { %>
+                            <a href="<%= contact.link %>"><%= contact.link %></a>
+                        <% } %>
                     </div>
                 <% }) %>
             </div>

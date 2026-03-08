@@ -36,7 +36,7 @@ const data = {
         },
 
         {
-            title: "Email",
+            title: "Gmail",
             link: "mathew.barrera@gmail.com",
         },
     ],
