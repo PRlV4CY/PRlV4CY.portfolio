@@ -1,16 +1,6 @@
 const data = {
     projects: [
         {
-            title: "Trello User Guide",
-            description: "This documentation is a step-by-step user guide for Trello, a visual project management tool. It explains key features, setup instructions, and best practices for new users.",
-            info: "A documentation website built with MkDocs Material. Written in Markdown and organized into clear sections (Getting Started, card management, members, labels, due dates, automation, notifications, etc.) with lots of annotated screenshots plus a glossary to help new users learn Trello quickly.",
-            img: "trello-user-guide.jpg",
-            stack: ["Markdown", "MkDocs", "MkDocs Material", "YAML"],
-            live: "",
-            code_link: "https://github.com/Addyware/userguides",
-        },
-        
-        {
             title: "",
             description: "",
             info: "",
@@ -18,6 +8,16 @@ const data = {
             stack: [""],
             live: "",
             code_link: "",
+        },
+        
+        {
+            title: "Trello User Guide",
+            description: "This documentation is a step-by-step user guide for Trello, a visual project management tool. It explains key features, setup instructions, and best practices for new users.",
+            info: "A documentation website built with MkDocs Material. Written in Markdown and organized into clear sections (Getting Started, card management, members, labels, due dates, automation, notifications, etc.) with lots of annotated screenshots plus a glossary to help new users learn Trello quickly.",
+            img: "trello-user-guide.jpg",
+            stack: ["Markdown", "MkDocs", "MkDocs Material", "YAML"],
+            live: "https://userguides.onrender.com",
+            code_link: "https://github.com/Addyware/userguides",
         },
     ],
 
