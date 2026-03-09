@@ -6,7 +6,7 @@ const data = {
             info: "The application simulates a real-world development workspace where users can create projects, assign tasks, and monitor progress. DevHouse focuses on clean UI design, organized data management, and modular server-side architecture.",
             img: "devhouse.jpg",
             stack: ["HTML", "CSS", "JavaScript", "EJS", "Node.js", "Express.js"],
-            live: "",
+            live: "https://devhouse-rtdx.onrender.com",
             code_link: "https://github.com/SDX24/OOP-term-proj",
         },
         
