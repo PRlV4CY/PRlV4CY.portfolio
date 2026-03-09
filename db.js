@@ -4,7 +4,7 @@ const data = {
             title: "DevHouse",
             description: "DevHouse is a project management web application that allows users to organize projects, manage tasks, and track development progress in a structured environment.",
             info: "The application simulates a real-world development workspace where users can create projects, assign tasks, and monitor progress. DevHouse focuses on clean UI design, organized data management, and modular server-side architecture.",
-            img: "",
+            img: "devhouse.jpg",
             stack: ["HTML", "CSS", "JavaScript", "EJS", "Node.js", "Express.js"],
             live: "",
             code_link: "https://github.com/SDX24/OOP-term-proj",
