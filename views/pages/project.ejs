@@ -1,20 +1,117 @@
-<div class="project-model-content">
-    <div class="project-model-grid">
-        <h1 class="title-project"><%= project.title %></h1>
-        <p class="project-info"><%= project.info %></p>
-        <ul class="project-stack-list">
-            <% project.stack.forEach((stack) => { %>
-                <li class="project-item">
-                    <p class="project-stack"><%= stack %></p>
-                </li>
-            <% }) %>
-        </ul>
-        <div class="project-model-img">
-            <img src="/media/img/<%= project.img %>" alt="project image">
-        </div>
-        <div class="project-model-links">
-            <a href="<%= project.live %>">Live</a>
-            <a href="<%= project.code_link %>">Code</a>
-        </div>
+<div class="project-model-grid">
+    
+    <div class="project-header-inline">
+        <% if (project.year) { %>
+            <span class="project-year"><%= project.year %></span>
+        <% } %>
+        <h1 class="title-project">
+            <%= project.title %><% if (project.subtitle) { %>: <%= project.subtitle %><% } %>
+        </h1>
     </div>
+
+    <% if (project.tagline) { %>
+        <p class="project-tagline"><%= project.tagline %></p>
+    <% } %>
+    
+    <% if (project.images && project.images.hero) { %>
+        <div class="project-model-img">
+            <img src="/media/img/<%= project.images.hero %>" alt="<%= project.images.heroAlt || '' %>">
+        </div>
+    <% } %>
+    
+    <% if (project.overview && (project.overview.summary || project.overview.problemContext || project.overview.note)) { %>
+        <div class="project-section">
+            <h2 class="section-title">Overview</h2>
+            <% if (project.overview.summary) { %>
+                <p class="project-info"><%= project.overview.summary %></p>
+            <% } %>
+            <% if (project.overview.problemContext) { %>
+                <p class="project-context"><%= project.overview.problemContext %></p>
+            <% } %>
+            <% if (project.overview.note) { %>
+                <p class="project-note"><%= project.overview.note %></p>
+            <% } %>
+        </div>
+    <% } %>
+
+    <% if (project.projectInfo && (project.projectInfo.deliverables?.length > 0 || project.projectInfo.techStack?.length > 0 || project.projectInfo.responsibilities?.length > 0)) { %>
+        <div class="project-info-table">
+            <% if (project.projectInfo.deliverables && project.projectInfo.deliverables.length > 0) { %>
+                <div class="info-row">
+                    <span class="info-label">Deliverables</span>
+                    <span class="info-value"><%= project.projectInfo.deliverables.join(', ') %></span>
+                </div>
+            <% } %>
+            <% if (project.projectInfo.techStack && project.projectInfo.techStack.length > 0) { %>
+                <div class="info-row">
+                    <span class="info-label">Tech Stack</span>
+                    <span class="info-value"><%= project.projectInfo.techStack.join(', ') %></span>
+                </div>
+            <% } %>
+            <% if (project.projectInfo.responsibilities && project.projectInfo.responsibilities.length > 0) { %>
+                <div class="info-row">
+                    <span class="info-label">Responsibilities</span>
+                    <span class="info-value"><%= project.projectInfo.responsibilities.join(', ') %></span>
+                </div>
+            <% } %>
+        </div>
+    <% } %>
+    
+    <% if (project.links && (project.links.live || project.links.github)) { %>
+        <div class="project-model-links">
+            <% if (project.links.live) { %>
+                <a href="<%= project.links.live %>" target="_blank" rel="noopener noreferrer">Live App</a>
+            <% } %>
+            <% if (project.links.github) { %>
+                <a href="<%= project.links.github %>" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <% } %>
+        </div>
+    <% } %>
+    
+    <% if (project.features && project.features.length > 0) { %>
+        <div class="project-section">
+            <h2 class="section-title">Key Features</h2>
+            <% project.features.forEach((feature, index) => { %>
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <span class="feature-number"><%= String(feature.number).padStart(2, '0') %></span>
+                        <h3 class="feature-title"><%= feature.title %></h3>
+                    </div>
+                    <div class="feature-body">
+                        <p class="feature-description"><%= feature.description %></p>
+                        <% if (feature.codeSnippet) { %>
+                            <div class="feature-code">
+                                <pre><code><%= feature.codeSnippet %></code></pre>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    <% } %>
+    
+    <% if (project.libraries && project.libraries.length > 0) { %>
+        <div class="project-section">
+            <h2 class="section-title">Third-Party Libraries</h2>
+            <div class="libraries-table">
+                <div class="libraries-header">
+                    <span>Library</span>
+                    <span>Use</span>
+                </div>
+                <% project.libraries.forEach((lib) => { %>
+                    <div class="libraries-row">
+                        <span class="lib-name">
+                            <% if (lib.link) { %>
+                                <a href="<%= lib.link %>" target="_blank" rel="noopener noreferrer"><%= lib.name %> ↗</a>
+                            <% } else { %>
+                                <%= lib.name %>
+                            <% } %>
+                        </span>
+                        <span class="lib-use"><%= lib.use %></span>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    <% } %>
+    
 </div>

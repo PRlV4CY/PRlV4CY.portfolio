@@ -8,7 +8,7 @@
                 <% projects.forEach((project) => { %>
                     <div class="project-card" data-project-title="<%= project.title %>">
                         <h3 class="project-title"><%= project.title %></h3>
-                        <p class="project-description"><%= project.description.substring(0, 100) %>...</p>
+                        <p class="project-description"><%= project.tagline.substring(0, 100) %>...</p>
                     </div>
                 <% }) %>
             </div>
