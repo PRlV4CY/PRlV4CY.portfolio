@@ -124,6 +124,29 @@ const data = {
                 github: "https://github.com/PRlV4CY/dice-game"
             },
         },
+
+        {
+            title: "User Authentication App",
+            tagline: "A web app that allows users to register and log in using secure authentication methods, including GitHub login.",
+
+            images: {
+                hero: "user-authentication-app.jpg",
+                heroAlt: "Login page of authentication system",
+            },
+            
+            overview: {
+                summary: "A full-stack authentication app built with Node.js, Express, and Passport.js. It supports local login with username and password, as well as GitHub OAuth login. The app includes session handling and protected routes so only logged-in users can access certain pages.",
+            },
+
+            projectInfo: {
+                techStack: ["Node.js", "Express", "Passport.js"],
+            },
+
+            links: {
+                live: "https://user-authentication-app-iq4n.onrender.com/auth/login",
+                github: "https://github.com/PRlV4CY/user-authentication-app"
+            },
+        },
     ],
 
     about: "I am a Full-Stack Web Development student focused on building modern, responsive, and user-friendly web applications. My work emphasizes clean code, accessibility, and performance. I enjoy turning ideas into real digital products using JavaScript, Node.js, and modern web technologies.",
