@@ -101,6 +101,29 @@ const data = {
                 github: "https://github.com/Addyware/userguides"
             },
         },
+
+        {
+            title: "Dice Game",
+            tagline: "A simple interactive dice game where players roll dice to compete for the highest score. It shows how game logic and user interaction work in a web app.",
+
+            images: {
+                hero: "dice-game.jpg",
+                heroAlt: "Dice game interface showing dice roll results",
+            },
+            
+            overview: {
+                summary: "A browser-based dice game built using HTML, CSS, and JavaScript. Players can roll dice and see random results generated each time. The game updates the UI based on the outcome and determines a winner. It focuses on basic game logic, DOM manipulation, and handling user actions.",
+            },
+
+            projectInfo: {
+                techStack: ["HTML", "CSS", "JavaScript"],
+            },
+
+            links: {
+                live: "https://dice-game-hwd0.onrender.com",
+                github: "https://github.com/PRlV4CY/dice-game"
+            },
+        },
     ],
 
     about: "I am a Full-Stack Web Development student focused on building modern, responsive, and user-friendly web applications. My work emphasizes clean code, accessibility, and performance. I enjoy turning ideas into real digital products using JavaScript, Node.js, and modern web technologies.",
