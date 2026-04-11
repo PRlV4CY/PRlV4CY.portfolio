@@ -147,6 +147,29 @@ const data = {
                 github: "https://github.com/PRlV4CY/user-authentication-app"
             },
         },
+
+        {
+            title: "TaskFlow",
+            tagline: "A task management web app that helps users organize tasks, set priorities, and track progress in one clean interface.",
+
+            images: {
+                hero: "taskflow.jpg",
+                heroAlt: "TaskFlow dashboard showing tasks, priorities, and progress filters",
+            },
+
+            overview: {
+                summary: "TaskFlow is a browser-based productivity app built with HTML, CSS, and JavaScript. Users can add tasks, assign priority levels, update task status, and filter tasks based on progress. The project focuses on DOM manipulation, event handling, local storage, and creating a responsive interface with practical real-world use.",
+            },
+
+            projectInfo: {
+                techStack: ["HTML", "CSS", "JavaScript"],
+            },
+
+            links: {
+                live: "https://taskflow-rmd6.onrender.com",
+                github: "https://github.com/PRlV4CY/taskflow"
+            },
+        },
     ],
 
     about: "I am a Full-Stack Web Development student focused on building modern, responsive, and user-friendly web applications. My work emphasizes clean code, accessibility, and performance. I enjoy turning ideas into real digital products using JavaScript, Node.js, and modern web technologies.",
