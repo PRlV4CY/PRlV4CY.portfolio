@@ -22,7 +22,7 @@ const data = {
             },
             links: {
                 live: "https://devhouse-rtdx.onrender.com",
-                github: ""
+                github: "https://github.com/SDX24/OOP-term-proj"
             },
             features: [
                 {
@@ -121,7 +121,7 @@ const data = {
 
             links: {
                 live: "https://dice-game-hwd0.onrender.com",
-                github: ""
+                github: "https://github.com/PRlV4CY/dice-game"
             },
         },
 
@@ -144,7 +144,7 @@ const data = {
 
             links: {
                 live: "https://user-authentication-app-iq4n.onrender.com/auth/login",
-                github: ""
+                github: "https://github.com/PRlV4CY/user-authentication-app"
             },
         },
 
